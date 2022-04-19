@@ -1,0 +1,19 @@
+
+<div style="margin-left: 700px;">
+  <button class="btn btn-success" (click)= "generate_machine()"  type= "button" >machine</button>
+  <button class="btn btn-warning" (click)= "generate_queue()"  type= "button" >queue</button>
+  <button class="btn btn-primary" (click)= "join()"  type= "button" >join</button>
+  <input  type ="text"  [(ngModel)] = "num_of_objects" style =" height : 40px; width : 50px;">
+</div>
+<div style="margin-left: 2px;" (click) = "update_data()">
+  <canvas id = "canvas" height="670" width = "1530"></canvas>
+</div>
+<div style="margin-left: 675px;">
+<button   class="btn btn-secondary" (click)= "stop()"  type= "button" >stop</button>
+<button  class="btn btn-danger" (click)= "simulate()"  type= "button" >simulate</button>
+<button  class="btn btn-info" (click)= "replay()"  type= "button" >replay</button>
+<button  class="btn btn-warning" (click)= "new()"  type= "button" >new</button>
+</div>
+
+
+
